@@ -5,7 +5,7 @@
 		              @enterPressed="submitForm"
 		              placeholder="New todo"/>
 
-		<custom-button @click="submitForm">Add</custom-button>
+		<custom-button @click.prevent="submitForm">Add</custom-button>
 	</form>
 </template>
 
