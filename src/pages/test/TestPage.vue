@@ -11,13 +11,13 @@
 
 	const ah = "ahahah"
 
-	let color = ref("#ff0000");
+	let textColor = ref("#ff0000");
 
-	let width = ref(300);
+	let elementWidth = ref(300);
 
 	setTimeout(() => {
-		color.value = "#0000ff";
-		width.value = 500;
+		textColor.value = "#0000ff";
+		elementWidth.value = 500;
 	}, 3000)
 </script>
 
@@ -25,8 +25,8 @@
 
 	.content{
 		transition: color 1s ease-in-out, width 1s ease-in-out;
-		width: v-bind(`${width}px`);
-		color: v-bind(color);
+		width: v-bind(`${elementWidth}px`);
+		color: v-bind(textColor);
 		background-color: yellow;
 	}
 
