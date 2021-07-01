@@ -1,5 +1,5 @@
 <template>
-	<form>
+	<form @submit.prevent>
 		<custom-input type="text"
 		              v-model="newTodoItem.label"
 		              @enterPressed="submitForm"
